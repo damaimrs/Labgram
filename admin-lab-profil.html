@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>TITLE</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	<link href="layout-1/css/styles.css" rel="stylesheet">
+	<link href="layout-1/css/responsive.css" rel="stylesheet">
+</head>
+<body >
+	<header>
+		<div class="container-fluid position-relative no-side-padding">
+			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+
+			<ul class="main-menu visible-on-click" id="main-menu">
+        <li style="margin: 5px 10px 0px 40px;"><h3><strong>Labgram</strong></h3></li>
+				<li><a href="admin-lab-index.html">Home</a></li>
+				<li><a href="admin-lab-dm.html">Direct Message</a></li>
+				<li><a href="admin-lab-profil.html">Profile</a></li>
+        <li>
+          <div class="src-area">
+    				<!-- <form>
+    					<button class="src-btn" type="button" data-toggle="modal" data-target="#add-post"><i class="ion-android-add"></i></button>
+    				</form> -->
+    	  </div>
+        </li>
+			</ul><!-- main-menu -->
+
+			<div class="src-area">
+				<form>
+					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+					<input class="src-input" type="text" placeholder="Type of search" onkeyup="search()" id="search-input">
+				</form>
+			</div>
+			<style>
+				.logout{
+				   position:fixed;
+				   right:10px;
+				   top:5px;
+				}
+			</style>
+			<div class="logout">
+				<form align="right" name="form1" method="post" action="login/index.html">
+				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#5bc0de;"></i>
+				</form>
+			</div>
+
+		</div><!-- conatiner -->
+	</header>
+	<div class="modal fade" id="edit-post-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title" id="exampleModalLabel">Edit Post</h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <form>
+	            <div class="form-group">
+	              <label for="exampleInputFile">Upload Foto</label>
+	                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+	                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan dipost</small>
+	            </div>
+	            <div class="form-group">
+	                <label for="exampleFormControlTextarea1">Caption</label>
+	                <textarea class="form-control" id="textarea-1" rows="3" onkeyup="getNewCaptionPost1()"></textarea>
+	              </div>
+	          </form>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="savePost1()">Post</button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="edit-post-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title" id="exampleModalLabel">Edit Post</h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <form>
+	            <div class="form-group">
+	              <label for="exampleInputFile">Upload Foto</label>
+	                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+	                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan dipost</small>
+	            </div>
+	            <div class="form-group">
+	                <label for="exampleFormControlTextarea1">Caption</label>
+	                <textarea class="form-control" id="textarea-2" rows="3" onkeyup="getNewCaptionPost2()"></textarea>
+	              </div>
+	          </form>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="savePost2()">Post</button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="edit-post-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title" id="exampleModalLabel">Edit Post</h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <form>
+	            <div class="form-group">
+	              <label for="exampleInputFile">Upload Foto</label>
+	                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+	                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan dipost</small>
+	            </div>
+	            <div class="form-group">
+	                <label for="exampleFormControlTextarea1">Caption</label>
+	                <textarea class="form-control" id="textarea-3" rows="3" onkeyup="getNewCaptionPost3()"></textarea>
+	              </div>
+	          </form>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="savePost3()">Post</button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="delete-post-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title" id="exampleModalLabel">Konfirmasi Hapus</h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <p>Anda ingin menghapus post ini?</p>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Tidak</button>
+	          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="deletePost1()">Ya</button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="delete-post-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title" id="exampleModalLabel">Konfirmasi Hapus</h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <p>Anda ingin menghapus post ini?</p>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Tidak</button>
+	          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="deletePost2()">Ya</button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<div class="modal fade" id="delete-post-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title" id="exampleModalLabel">Konfirmasi Hapus</h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <p>Anda ingin menghapus post ini?</p>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Tidak</button>
+	          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="deletePost3()">Ya</button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<section class="blog-area section">
+
+		<div class="container">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="card h-100">
+
+				<div class="single-post post-style-2 post-style-3">
+
+					<div class="blog-info" style="margin: 0 100px 0 100px;">
+						<div class="avatar-area">
+							<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+							<div class="right-area">
+								<a class="name"><b>Laboratorium KCV</b>
+              <!-- <button type="button" class="btn btn-info btn-sm" id="follow-status" style="margin-left:15px; margin-bottom:4px;" onclick="changeFollowStatus()"> Follow </button> -->
+              <a href="admin-lab-edit-profil.html"><button type="button" class="btn btn-info btn-sm" id="follow-status" style="margin-left:15px; margin-bottom:4px;"> Edit profil </button></a> 
+            </a>
+								<p class="date" href="#">Berdiri sejak 2012 di Teknik Informatika ITS</h6>
+            <ul style="margin-top:5px;">
+              <li style="margin: 0 20px 0 20px;"><a href="#"><i class="ion-android-people"></i> 57</a></li>
+								<li style="margin: 0 20px 0 20px;"><a href="#"><i class="ion-image"></i> 6</a></li>
+            </ul>
+							</div>
+
+						</div>
+
+					</div><!-- blog-right -->
+
+				</div><!-- single-post extra-blog -->
+
+			</div><!-- card -->
+		</div><!-- col-lg-4 col-md-6 -->
+
+      </div>
+
+			<div class="row d-flex" id="post-list">
+        		<div class="col-lg-4 col-md-6" id="post-1" style="display:block;">
+					<div class="card h-100">
+						<div class="single-post post-style-1">
+							<div class="blog-image"><img src="images/marion-michele-330691.jpg" alt="Blog Image">							
+							</div>
+							<button type="button" class="close" aria-label="Close" style="margin: 3px 5px 0px 0px" data-toggle="modal" data-target="#delete-post-1">
+								  <span>&times;</span>
+							</button>
+							<div class="blog-info">
+	               				<p class="title"><a><b class="content-title" id="caption-1">Telah berlangsung acara Data Mining Club di Laboratorium KCV</b></a></p>
+	  							<ul class="post-footer">
+	  								<li><a onclick="changeColor1()" id="count-1"><i class="ion-heart" id="like-1"></i>57</a></li>
+	  								<li><a href="admin-lab-detil-foto.html"><i class="ion-chatbubble"></i>6</a></li>
+									<li>
+										<a class="src-btn" data-toggle="modal" data-target="#edit-post-1" onclick="editPost1()"><i class="ion-edit"></i></a>
+									</li>								
+	  							</ul>
+							</div><!-- blog-info -->
+						</div><!-- single-post -->
+					</div><!-- card -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-lg-4 col-md-6" id="post-2" style="display:block;">
+					<div class="card h-100">
+						<div class="single-post post-style-1">
+							<div class="blog-image"><img src="images/audrey-jackson-260657.jpg" alt="Blog Image"></div>
+							<button type="button" class="close" aria-label="Close" style="margin: 3px 5px 0px 0px" data-toggle="modal" data-target="#delete-post-2">
+								  <span>&times;</span>
+							</button>
+							<div class="blog-info">
+	                			<p class="title"><a><b class="content-title" id="caption-2">Telah Berlangsung acara LBE(Lab Basic Education) di Laboratorium KCV</b></a></p>
+	  							<ul class="post-footer">
+	  								<li><a onclick="changeColor2()" id="count-2"><i class="ion-heart" id="like-2"></i>57</a></li>
+	  								<li><a href="admin-lab-detil-foto.html"><i class="ion-chatbubble"></i>6</a></li>
+									<li>
+										<a class="src-btn" data-toggle="modal" data-target="#edit-post-2" onclick="editPost2()"><i class="ion-edit"></i></a>
+									</li>
+	  							</ul>
+							</div><!-- blog-info -->
+						</div><!-- single-post -->
+					</div><!-- card -->
+				</div><!-- col-lg-4 col-md-6 -->
+				<div class="col-lg-4 col-md-6" id="post-3" style="display:block;">
+					<div class="card h-100">
+						<div class="single-post post-style-1">
+							<div class="blog-image"><img src="images/pexels-photo-370474.jpeg" alt="Blog Image"></div>
+							<button type="button" class="close" aria-label="Close" style="margin: 3px 5px 0px 0px" data-toggle="modal" data-target="#delete-post-3">
+								  <span>&times;</span>
+							</button>
+							<p class="title"><a><b class="content-title" id="caption-3">Telah Berlangsung sidang Tugas Akhir di Laboratorium KCV oleh salah satu mahasiswa Tugas Akhir RMK KCV. Semoga acara berjalan dengan lancar.</b></a></p>
+							<ul class="post-footer">
+								<li><a onclick="changeColor3()" id="count-3"><i class="ion-heart" id="like-3"></i>57</a></li>
+								<li><a href="admin-lab-detil-foto.html"><i class="ion-chatbubble"></i>6</a></li>
+								<li>
+									<a class="src-btn" data-toggle="modal" data-target="#edit-post-3" onclick="editPost3()"><i class="ion-edit"></i></a>
+								</li>
+							</ul>
+						</div><!-- single-post -->
+					</div><!-- card -->
+				</div><!-- col-lg-4 col-md-6 -->
+			</div>
+		</div><!-- container -->
+	</section><!-- section -->
+
+
+	<footer>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-section">
+
+
+						<!-- <ul class="icons">
+							<li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
+						</ul> -->
+
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-lg-4 col-md-6" style="text-align:center;">
+          <h3><strong>Labgram</strong></h3>
+          <p class="copyright">Labgram @ 2017. All rights reserved.</p>
+          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-section">
+
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</footer>
+
+
+	<!-- SCIPTS -->
+
+  <script>
+  	var newCaption;
+
+    function changeFollowStatus() {
+      if(document.getElementById('follow-status').innerHTML == 'Follow'){
+        document.getElementById('follow-status').innerHTML = 'Followed';
+      }
+      else{
+        document.getElementById('follow-status').innerHTML = 'Follow';
+      }
+    }
+
+    function deletePost1() {
+    	document.getElementById('post-1').style.display = 'none';
+    }
+
+    function deletePost2() {
+    	document.getElementById('post-2').style.display = 'none';
+    }
+
+    function deletePost3() {
+    	document.getElementById('post-3').style.display = 'none';
+    }
+
+    function search() {
+    	var input, postList, filter, post, li, a, i, content, contentVal;
+    	input = document.getElementById("search-input");
+    	filter = input.value.toUpperCase();
+    	postList = document.getElementById("post-list");
+    	post = postList.getElementsByClassName("col-lg-4 col-md-6");
+
+    	for (i = 0; i<post.length; i++){
+    		content = post[i].getElementsByClassName("content-title");
+    		console.log(content[0]);
+    		console.log(content[0].innerText);
+    		if( content[0].innerText.toUpperCase().indexOf(filter) > -1) {
+    			post[i].style.display = "";
+    		}
+    		else{
+    			post[i].style.display = "none";
+    		}
+    	}
+    }
+
+    function changeColor1() {
+    	if (document.getElementById('like-1').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+    		document.getElementById('like-1').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+    		document.getElementById('like-1').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
+    }
+
+    function changeColor2() {
+    	if (document.getElementById('like-2').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-2').innerHTML = '<i class="ion-heart" id="like-2"></i>' + count.toString();
+    		document.getElementById('like-2').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-2').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-2').innerHTML = '<i class="ion-heart" id="like-2"></i>' + count.toString();
+    		document.getElementById('like-2').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
+    }
+
+    function changeColor3() {
+    	if (document.getElementById('like-3').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-3').innerHTML = '<i class="ion-heart" id="like-3"></i>' + count.toString();
+    		document.getElementById('like-3').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-3').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-3').innerHTML = '<i class="ion-heart" id="like-3"></i>' + count.toString();
+    		document.getElementById('like-3').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
+    }
+
+    function editPost1() {
+    	var caption;
+    	caption = document.getElementById('caption-1').innerText;
+    	document.getElementById('textarea-1').value = caption;
+    }
+
+    function editPost2() {
+    	var caption;
+    	caption = document.getElementById('caption-2').innerText;
+    	document.getElementById('textarea-2').value = caption;
+    }
+
+    function editPost3() {
+    	var caption;
+    	caption = document.getElementById('caption-3').innerText;
+    	document.getElementById('textarea-3').value = caption;
+    }
+
+    function getNewCaptionPost1() {    	
+    	newCaption = document.getElementById('textarea-1').value;    	
+    }
+
+    function getNewCaptionPost2() {    	
+    	newCaption = document.getElementById('textarea-2').value;    	
+    }
+
+    function getNewCaptionPost3() {    	
+    	newCaption = document.getElementById('textarea-3').value;    	
+    }
+
+    function savePost1() {
+    	document.getElementById('caption-1').innerText = newCaption;
+    	newCaption = '';
+    }
+
+    function savePost2() {
+    	document.getElementById('caption-2').innerText = newCaption;
+    	newCaption = '';
+    }
+
+    function savePost3() {
+    	document.getElementById('caption-3').innerText = newCaption;
+    	newCaption = '';
+    }
+
+  </script> 
+	<script src="common-js/jquery-3.1.1.min.js"></script>
+
+	<script src="common-js/tether.min.js"></script>
+
+	<script src="common-js/bootstrap.js"></script>
+
+	<script src="common-js/scripts.js"></script>
+
+</body>
+</html>

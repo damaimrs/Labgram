@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>TITLE</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	<link href="layout-1/css/styles.css" rel="stylesheet">
+	<link href="layout-1/css/responsive.css" rel="stylesheet">
+</head>
+<body >
+	<header>
+		<div class="container-fluid position-relative no-side-padding">
+			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+
+			<ul class="main-menu visible-on-click" id="main-menu">
+        <li style="margin: 5px 10px 0px 40px;"><h3><strong>Labgram</strong></h3></li>
+				<li><a href="mhs-index.html">Home</a></li>
+				<li><a href="#">Direct Message</a></li>
+				<li><a href="admin-lab-profil.html">Profile</a></li>
+        <li>
+          <div class="src-area">
+    				<form>
+    					<button class="src-btn" type="button" data-toggle="modal" data-target="#add-post"><i class="ion-android-add"></i></button>
+    				</form>
+    			</div>
+        </li>
+			</ul><!-- main-menu -->
+
+			<div class="src-area" >
+				<form>
+					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+					<input class="src-input" type="text" placeholder="Type of search">
+				</form>
+			</div>
+			<style>
+				.logout{
+				   position:fixed;
+				   right:10px;
+				   top:5px;
+				}
+			</style>
+			<div class="logout">
+				<form align="right" name="form1" method="post" action="login/index.html">
+				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#5bc0de;"></i>
+				</form>
+			</div>
+
+		</div><!-- conatiner -->
+	</header>
+  <div class="modal fade" id="add-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputFile">Upload Foto</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan dipost</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Caption</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-info btn-sm">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	<section class="blog-area section">
+
+		<div class="container">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="card h-100">
+
+						<div class="single-post post-style-2 post-style-3">
+
+							<div class="blog-info" style="margin: 0 100px 0 100px;">
+								<div class="right-area">
+									<h1 text-alig = "center" text-transform = "uppercase" style="margin-left: 250px;" >Add Account</h1>
+								</div>
+								<div class="Add_account" style="background-color: #acf9e1; margin-right: 300px;
+
+margin-left: 100px;">
+									<div class="right-area">
+										<h4 style="margin-top: 20px; margin-left: 300px">Username</h4>
+										<input type="text" placeholder="Enter Username" style="width: 50%; padding-left: 30px;
+margin-left: 180px; margin-bottom: 10px; margin-top: 10px; padding-left: 100px;" name="uname" required>
+										<h4 style="margin-top: 0px; margin-left: 320px">NRP</h4>
+										<input type="text" placeholder="Enter NRP" style="width: 50%; padding-left: 30px;
+margin-left: 180px; margin-bottom: 10px; margin-top: 10px; padding-left: 120px;" name="uname" required>
+										<h4 style="margin-top: 0px; margin-left: 310px">Email</h4>
+										<input type="text" placeholder="Enter Email" style="width: 50%; padding-left: 30px;
+margin-left: 180px; margin-bottom: 10px; margin-top: 10px; padding-left: 110px;" name="uname" required>
+										<h4 style="margin-top: 0px; margin-left: 285px">Laboraturium</h4>
+										<input type="text" placeholder="Enter Laboraturium" style="width: 50%; padding-left: 30px;
+margin-left: 180px; margin-bottom: 10px; margin-top: 10px; padding-left: 85px;" name="uname" required>
+										<h4 style="margin-top: 0px; margin-left: 300px">Password</h4>
+										<input type="password" placeholder="Enter Password" style="width: 50%; padding-left: 30px;
+margin-left: 180px; margin-bottom: 10px; margin-top: 10px; padding-left: 100px;" name="uname" required>
+									</div>
+									<button type="button" class="btn btn-info btn-sm" id="follow-status" style="margin-left:290px; margin-bottom:20px; margin-top: 10px; background-color: #07704f;"> Add Account </button>
+								</div>
+								<!-- <div class="avatar-area">
+									<a class="avatar" href="#" style="width: 100px; height: 100px;" ><img src="images/icons8-team-355979.jpg" alt="Profile Image" ></a>
+									<div class="right-area" style="margin-left: 120px;">
+										<a class="name" style="font-size: 20px; margin-top: 20px"><b>Laboratorium KCV</b>
+											<input type="text" placeholder="Enter Username" style="width: 50%; padding-left: 30px;
+margin-left: 30px; margin-bottom: 10px; margin-top: 20px" name="uname" required>
+                    </a>
+										<h6 class="date" href="#">Berdiri sejak 2012 di Teknik Informatika ITS</h6>
+										<input type="text" placeholder="Enter Status" style="width: 95%; padding-left: 10px;
+margin-left: 0px; height: 50%; margin-bottom: 10px; margin-top: 20px;" maxlength="70" name="uname" required>
+                    <!-- <ul style="margin-top:5px;">
+                      <li style="margin: 0 20px 0 20px;"><a href="#"><i class="ion-android-people"></i> 57</a></li>
+      								<li style="margin: 0 20px 0 20px;"><a href="#"><i class="ion-image"></i> 6</a></li>
+                    </ul> -->
+                    <!-- <button type="button" class="btn btn-info btn-sm" id="follow-status" style="margin-left:32%; margin-bottom:4px;">Save Profile</button>
+									</div>
+								</div> --> 
+								
+
+
+							</div><!-- blog-right -->
+
+						</div><!-- single-post extra-blog -->
+
+					</div><!-- card -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+      </div>
+		</div><!-- container -->
+	</section><!-- section -->
+
+
+	<footer>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-section">
+
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-lg-4 col-md-6" style="text-align:center;">
+          <h3><strong>Labgram</strong></h3>
+          <p class="copyright">Labgram @ 2017. All rights reserved.</p>
+          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-section">
+
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</footer>
+
+
+	<!-- SCIPTS -->
+
+  <script>
+
+    function changeFollowStatus() {
+      if(document.getElementById('follow-status').innerHTML == 'Follow'){
+        document.getElementById('follow-status').innerHTML = 'Followed';
+      }
+      else{
+        document.getElementById('follow-status').innerHTML = 'Follow';
+      }
+    }
+  </script>
+	<script src="common-js/jquery-3.1.1.min.js"></script>
+
+	<script src="common-js/tether.min.js"></script>
+
+	<script src="common-js/bootstrap.js"></script>
+
+	<script src="common-js/scripts.js"></script>
+
+</body>
+</html>

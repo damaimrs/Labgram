@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>TITLE</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	<link href="layout-1/css/styles.css" rel="stylesheet">
+	<link href="layout-1/css/responsive.css" rel="stylesheet">
+  <link href="css/mhs-index.css" rel="stylesheet">
+</head>
+<body >
+	<header>
+		<div class="container-fluid position-relative no-side-padding">
+			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+
+			<ul class="main-menu visible-on-click" id="main-menu">
+        <li style="margin: 5px 10px 0px 40px;"><h3><strong>Labgram</strong></h3></li>
+				<li><a href="mhs-index.html">Home</a></li>
+				<li><a href="mhs-dm.html">Direct Message</a></li>
+				<li><a href="mhs-profil.html">Profile</a></li>
+        <li>
+          <div class="src-area">
+    				<!-- <form>
+    					<button class="src-btn" type="button" data-toggle="modal" data-target="#add-post"><i class="ion-android-add"></i></button>
+    				</form> -->
+    			</div>
+        </li>
+			</ul><!-- main-menu -->
+
+			<div class="src-area">
+				<form>
+					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+					<input class="src-input" type="text" placeholder="Type of search">
+				</form>
+			</div>
+
+		</div><!-- conatiner -->
+	</header>
+  <div class="modal fade" id="add-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputFile">Upload Foto</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan dipost</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Caption</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-info btn-sm">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	<section class="blog-area section">
+
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+
+				<div class="col-lg-9 col-md-9 col-sm-10">
+					<div class="card h-100">
+						<div class="single-post post-style-2">
+							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-info">
+                <div class="avatar-area">
+									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+									<div class="right-area">
+										<a class="name" href="mhs-admin-lab-profil.html"><b>Laboratorium KCV</b></a>
+										<h6 class="date">on May 13, 2018 at 7:30pm</h6>
+									</div>
+								</div>
+								<p>Telah berlangsung acara Data Mining Club di Lbaoratorium KCV</p>
+
+                <div id="comment1" style="display:none">
+                  <form>
+                    <div class="form-group">
+                      <label for="comment1"></label>
+                      <br>
+                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
+                    </div>
+                  </form>
+
+                </div>
+								<ul class="post-footer">
+									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a href="detail-foto.html"><i class="ion-chatbubble"></i>2</a></li>
+				                     <li><a><i class="ion-android-add" onclick="showComments1()"></i></a></li>
+													<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
+								</ul>
+
+							</div><!-- blog-right -->
+
+						</div><!-- single-post extra-blog -->
+
+					</div><!-- card -->
+				</div><!-- col-lg-8 col-md-12 -->
+        <div class="col-lg-9 col-md-9 col-sm-10">
+					<div class="card h-100">
+						<div class="single-post post-style-2">
+							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-info">
+                <div class="avatar-area">
+									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+									<div class="right-area">
+										<a class="name" href="mhs-admin-lab-profil.html"><b>Laboratorium KCV</b></a>
+										<h6 class="date" href="#">on May 14, 2018 at 7:30pm</h6>
+									</div>
+								</div>
+								<p>Telah Berlangsung acara LBE(Lab Basic Education) di Laboratorium KCV</p>
+
+                <div id="comment2" style="display:none">
+                  <form>
+                    <div class="form-group">
+                      <label for="comment2"></label>
+                      <br>
+                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
+                    </div>
+                  </form>
+
+                </div>
+								<ul class="post-footer">
+									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a href="detail-foto.html"><i class="ion-chatbubble"></i>2</a></li>
+                  <li><a><i class="ion-android-add" onclick="showComments2()"></i></a></li>
+									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
+								</ul>
+
+							</div><!-- blog-right -->
+
+						</div><!-- single-post extra-blog -->
+
+					</div><!-- card -->
+				</div><!-- col-lg-8 col-md-12 -->
+        <div class="col-lg-9 col-md-9 col-sm-10">
+					<div class="card h-100">
+						<div class="single-post post-style-2">
+							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-info">
+                <div class="avatar-area">
+									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+									<div class="right-area">
+										<a class="name" href="mhs-admin-lab-profil.html"><b>Laboratorium KCV</b></a>
+										<h6 class="date" href="#">on May 08, 2018 at 9:00am</h6>
+									</div>
+								</div>
+								<p>Telah Berlangsung sidang Tugas Akhir di Laboratorium KCV oleh salah satu mahasiswa Tugas Akhir RMK KCV. Semoga acara berjalan dengan lancar.</p>
+
+                <div id="comment3" style="display:none">
+                  <form>
+                    <div class="form-group">
+                      <label for="comment3"></label>
+                      <br>
+                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
+                    </div>
+                  </form>
+
+                </div>
+								<ul class="post-footer">
+									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a href="detail-foto.html"><i class="ion-chatbubble"></i>2</a></li>
+                  <li><a><i class="ion-android-add" onclick="showComments3()"></i></a></li>
+									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
+								</ul>
+
+							</div><!-- blog-right -->
+
+						</div><!-- single-post extra-blog -->
+
+					</div><!-- card -->
+				</div><!-- col-lg-8 col-md-12 -->
+		</div><!-- container -->
+	</section><!-- section -->
+
+
+	<footer>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-section">
+
+
+						<!-- <ul class="icons">
+							<li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
+							<li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
+						</ul> -->
+
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-lg-4 col-md-6" style="text-align:center;">
+          <h3><strong>Labgram</strong></h3>
+          <p class="copyright">Labgram @ 2017. All rights reserved.</p>
+          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+				</div><!-- col-lg-4 col-md-6 -->
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-section">
+
+					</div><!-- footer-section -->
+				</div><!-- col-lg-4 col-md-6 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</footer>
+
+
+	<!-- SCIPTS -->
+  <script type="text/javascript">
+
+    function showComments1() {
+      if(document.getElementById('comment1').style.display == "block"){
+        document.getElementById('comment1').style.display = "none";
+      }
+      else{
+        document.getElementById('comment1').style.display = "block";
+      }
+    }
+    function showComments2() {
+      if(document.getElementById('comment2').style.display == "block"){
+        document.getElementById('comment2').style.display = "none";
+      }
+      else{
+        document.getElementById('comment2').style.display = "block";
+      }
+    }
+    function showComments3() {
+      if(document.getElementById('comment3').style.display == "block"){
+        document.getElementById('comment3').style.display = "none";
+      }
+      else{
+        document.getElementById('comment3').style.display = "block";
+      }
+    }
+  </script>
+
+	<script src="common-js/jquery-3.1.1.min.js"></script>
+
+	<script src="common-js/tether.min.js"></script>
+
+	<script src="common-js/bootstrap.js"></script>
+
+	<script src="common-js/scripts.js"></script>
+
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</body>
+</html>
