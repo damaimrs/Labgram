@@ -1,443 +1,174 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>TITLE</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
 
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Login &amp; Register Templates</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                	
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Bootstrap</strong> Login &amp; Register Forms</h1>
+                            <div class="description">
+                            	<p>
+	                            	This is a free responsive <strong>"login and register forms"</strong> template made with Bootstrap. 
+	                            	Download it on <a href="http://azmind.com" target="_blank"><strong>AZMIND</strong></a>, 
+	                            	customize and use it as you like!
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Login to our site</h3>
+	                            		<p>Enter username and password to log on:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-key"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="admin-sistem-index.html" method="post" class="login-form">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-username">Username</label>
+				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        </div>
+				                        <button type="submit" class="btn">Sign in!</button>
+				                    </form>
+			                    </div>
+		                    </div>
+		                
+		                	<div class="social-login">
+	                        	<h3>...or login with:</h3>
+	                        	<div class="social-login-buttons">
+		                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
+		                        		<i class="fa fa-facebook"></i> Facebook
+		                        	</a>
+		                        	<a class="btn btn-link-1 btn-link-1-twitter" href="#">
+		                        		<i class="fa fa-twitter"></i> Twitter
+		                        	</a>
+		                        	<a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+		                        		<i class="fa fa-google-plus"></i> Google Plus
+		                        	</a>
+	                        	</div>
+	                        </div>
+	                        
+                        </div>
+                        
+                        <div class="col-sm-1 middle-border"></div>
+                        <div class="col-sm-1"></div>
+                        	
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Sign up now</h3>
+	                            		<p>Fill in the form below to get instant access:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="../admin-sistem-index.html" method="post" class="registration-form">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-first-name">First name</label>
+				                        	<input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-last-name">Last name</label>
+				                        	<input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-email">Email</label>
+				                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-about-yourself">About yourself</label>
+				                        	<textarea name="form-about-yourself" placeholder="About yourself..." 
+				                        				class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+				                        </div>
+				                        <button type="submit" class="btn">Sign me up!</button>
+				                    </form>
+			                    </div>
+                        	</div>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				<div class="footer-border"></div>
+        				<p>Made by Anli Zaimi at <a href="http://azmind.com" target="_blank"><strong>AZMIND</strong></a> 
+        					having a lot of fun. <i class="fa fa-smile-o"></i></p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
 
-	<!-- Font -->
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-
-
-	<!-- Stylesheets -->
-
-	<link href="common-css/bootstrap.css" rel="stylesheet">
-
-	<link href="common-css/ionicons.css" rel="stylesheet">
-
-
-	<link href="layout-1/css/styles.css" rel="stylesheet">
-
-	<link href="layout-1/css/responsive.css" rel="stylesheet">
-
-</head>
-<body >
-
-	<header>
-		<div class="container-fluid position-relative no-side-padding">
-
-			<a href="#" class="logo"><img src="images/logo.png" alt="Logo Image"></a>
-
-			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
-
-			<ul class="main-menu visible-on-click" id="main-menu">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Categories</a></li>
-				<li><a href="#">Features</a></li>
-			</ul><!-- main-menu -->
-
-			<div class="src-area">
-				<form>
-					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
-					<input class="src-input" type="text" placeholder="Type of search">
-				</form>
-			</div>
-			<style>
-				.logout{
-				   position:fixed;
-				   right:10px;
-				   top:5px;
-				}
-			</style>
-			<div class="logout">
-				<form align="right" name="form1" method="post" action="login/index.html">
-				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#5bc0de;"></i>
-				</form>
-			</div>
-
-		</div><!-- conatiner -->
-	</header>
-
-	<div class="slider"></div><!-- slider -->
-
-	<section class="blog-area section">
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-						<div class="single-post post-style-1">
-
-							<div class="blog-image"><img src="images/marion-michele-330691.jpg" alt="Blog Image"></div>
-
-							<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
-
-							<div class="blog-info">
-
-								<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-								Concepts in Physics?</b></a></h4>
-
-								<ul class="post-footer">
-									<li><a href="#"><i class="ion-heart"></i>57</a></li>
-									<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-									<li><a href="#"><i class="ion-eye"></i>138</a></li>
-								</ul>
-
-							</div><!-- blog-info -->
-						</div><!-- single-post -->
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-						<div class="single-post post-style-1">
-
-							<div class="blog-image"><img src="images/audrey-jackson-260657.jpg" alt="Blog Image"></div>
-
-							<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
-
-							<div class="blog-info">
-								<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-
-								<ul class="post-footer">
-									<li><a href="#"><i class="ion-heart"></i>57</a></li>
-									<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-									<li><a href="#"><i class="ion-eye"></i>138</a></li>
-								</ul>
-							</div><!-- blog-info -->
-
-						</div><!-- single-post -->
-
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-						<div class="single-post post-style-1">
-
-							<div class="blog-image"><img src="images/pexels-photo-370474.jpeg" alt="Blog Image"></div>
-
-							<a class="avatar" href="#"><img src="images/averie-woodard-319832.jpg" alt="Profile Image"></a>
-
-							<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-								Concepts in Physics?</b></a></h4>
-
-							<ul class="post-footer">
-								<li><a href="#"><i class="ion-heart"></i>57</a></li>
-								<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-								<li><a href="#"><i class="ion-eye"></i>138</a></li>
-							</ul>
-
-						</div><!-- single-post -->
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-8 col-md-12">
-					<div class="card h-100">
-						<div class="single-post post-style-2">
-
-							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
-
-							<div class="blog-info">
-
-								<h6 class="pre-title"><a href="#"><b>HEALTH</b></a></h6>
-
-								<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-								<div class="avatar-area">
-									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
-									<div class="right-area">
-										<a class="name" href="#"><b>Lora Plamer</b></a>
-										<h6 class="date" href="#">on Sep 29, 2017 at 9:48am</h6>
-									</div>
-								</div>
-
-								<ul class="post-footer">
-									<li><a href="#"><i class="ion-heart"></i>57</a></li>
-									<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-									<li><a href="#"><i class="ion-eye"></i>138</a></li>
-								</ul>
-
-							</div><!-- blog-right -->
-
-						</div><!-- single-post extra-blog -->
-
-					</div><!-- card -->
-				</div><!-- col-lg-8 col-md-12 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-						<div class="single-post post-style-1">
-
-							<div class="blog-image"><img src="images/dmitri-popov-326976.jpg" alt="Blog Image"></div>
-
-							<a class="avatar" href="#"><img src="images/averie-woodard-319832.jpg" alt="Profile Image"></a>
-
-							<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-								Concepts in Physics?</b></a></h4>
-
-							<ul class="post-footer">
-								<li><a href="#"><i class="ion-heart"></i>57</a></li>
-								<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-								<li><a href="#"><i class="ion-eye"></i>138</a></li>
-							</ul>
-
-						</div><!-- single-post -->
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-
-						<div class="single-post post-style-2 post-style-3">
-
-							<div class="blog-info">
-
-								<h6 class="pre-title"><a href="#"><b>HEALTH</b></a></h6>
-
-								<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-								<div class="avatar-area">
-									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
-									<div class="right-area">
-										<a class="name" href="#"><b>Lora Plamer</b></a>
-										<h6 class="date" href="#">on Sep 29, 2017 at 9:48am</h6>
-									</div>
-								</div>
-
-								<ul class="post-footer">
-									<li><a href="#"><i class="ion-heart"></i>57</a></li>
-									<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-									<li><a href="#"><i class="ion-eye"></i>138</a></li>
-								</ul>
-
-							</div><!-- blog-right -->
-
-						</div><!-- single-post extra-blog -->
-
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-						<div class="single-post post-style-1">
-
-							<div class="blog-image"><img src="images/ben-o-sullivan-382817.jpg" alt="Blog Image"></div>
-
-							<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
-
-							<div class="blog-info">
-								<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-
-								<ul class="post-footer">
-									<li><a href="#"><i class="ion-heart"></i>57</a></li>
-									<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-									<li><a href="#"><i class="ion-eye"></i>138</a></li>
-								</ul>
-							</div><!-- blog-info -->
-
-						</div><!-- single-post -->
-
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-
-						<div class="single-post post-style-4">
-
-							<div class="display-table">
-								<h4 class="title display-table-cell"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-							</div>
-
-							<ul class="post-footer">
-								<li><a href="#"><i class="ion-heart"></i>57</a></li>
-								<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-								<li><a href="#"><i class="ion-eye"></i>138</a></li>
-							</ul>
-
-						</div><!-- single-post -->
-
-						<div class="single-post">
-
-							<div class="display-table">
-								<h4 class="title display-table-cell"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-							</div>
-
-							<ul class="post-footer">
-								<li><a href="#"><i class="ion-heart"></i>57</a></li>
-								<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-								<li><a href="#"><i class="ion-eye"></i>138</a></li>
-							</ul>
-
-						</div><!-- single-post -->
-
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="card h-100">
-
-						<div class="single-post post-style-4">
-
-							<div class="display-table">
-								<h4 class="title display-table-cell"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-							</div>
-
-							<ul class="post-footer">
-								<li><a href="#"><i class="ion-heart"></i>57</a></li>
-								<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-								<li><a href="#"><i class="ion-eye"></i>138</a></li>
-							</ul>
-
-						</div><!-- single-post -->
-
-						<div class="single-post">
-
-							<div class="display-table">
-								<h4 class="title display-table-cell"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-							</div>
-
-							<ul class="post-footer">
-								<li><a href="#"><i class="ion-heart"></i>57</a></li>
-								<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-								<li><a href="#"><i class="ion-eye"></i>138</a></li>
-							</ul>
-
-						</div><!-- single-post -->
-
-					</div><!-- card -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-8 col-md-12">
-					<div class="card h-100">
-						<div class="single-post post-style-2">
-
-							<div class="blog-image"><img src="images/icons8-team-355990.jpg" alt="Blog Image"></div>
-
-							<div class="blog-info">
-
-								<h6 class="pre-title"><a href="#"><b>HEALTH</b></a></h6>
-
-								<h4 class="title"><a href="#"><b>How Did Van Gogh's Turbulent Mind Depict One of the Most Complex
-									Concepts in Physics?</b></a></h4>
-
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-								<div class="avatar-area">
-									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
-									<div class="right-area">
-										<a class="name" href="#"><b>Lora Plamer</b></a>
-										<h6 class="date" href="#">on Sep 29, 2017 at 9:48am</h6>
-									</div>
-								</div>
-
-								<ul class="post-footer">
-									<li><a href="#"><i class="ion-heart"></i>57</a></li>
-									<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-									<li><a href="#"><i class="ion-eye"></i>138</a></li>
-								</ul>
-
-							</div><!-- blog-right -->
-
-						</div><!-- single-post extra-blog -->
-
-					</div><!-- card -->
-				</div><!-- col-lg-8 col-md-12 -->
-
-			</div><!-- row -->
-
-			<a class="load-more-btn" href="#"><b>LOAD MORE</b></a>
-
-		</div><!-- container -->
-	</section><!-- section -->
-
-
-	<footer>
-
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-4 col-md-6">
-					<div class="footer-section">
-
-						<a class="logo" href="#"><img src="images/logo.png" alt="Logo Image"></a>
-						<p class="copyright">Bona @ 2017. All rights reserved.</p>
-						<p class="copyright">Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-						<ul class="icons">
-							<li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
-							<li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
-							<li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-							<li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
-							<li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
-						</ul>
-
-					</div><!-- footer-section -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-						<div class="footer-section">
-						<h4 class="title"><b>CATAGORIES</b></h4>
-						<ul>
-							<li><a href="#">BEAUTY</a></li>
-							<li><a href="#">HEALTH</a></li>
-							<li><a href="#">MUSIC</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">SPORT</a></li>
-							<li><a href="#">DESIGN</a></li>
-							<li><a href="#">TRAVEL</a></li>
-						</ul>
-					</div><!-- footer-section -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-				<div class="col-lg-4 col-md-6">
-					<div class="footer-section">
-
-						<h4 class="title"><b>SUBSCRIBE</b></h4>
-						<div class="input-area">
-							<form>
-								<input class="email-input" type="text" placeholder="Enter your email">
-								<button class="submit-btn" type="submit"><i class="icon ion-ios-email-outline"></i></button>
-							</form>
-						</div>
-
-					</div><!-- footer-section -->
-				</div><!-- col-lg-4 col-md-6 -->
-
-			</div><!-- row -->
-		</div><!-- container -->
-	</footer>
-
-
-	<!-- SCIPTS -->
-
-	<script src="common-js/jquery-3.1.1.min.js"></script>
-
-	<script src="common-js/tether.min.js"></script>
-
-	<script src="common-js/bootstrap.js"></script>
-
-	<script src="common-js/scripts.js"></script>
-
-</body>
 </html>

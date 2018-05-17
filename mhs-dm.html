@@ -97,8 +97,8 @@
 
 	<section class="blog-area section">
 		<div class="container darker">
-			<img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
-			 <h2 style="text-align: right; margin-top: 10px;">Damai Marisa B</h2>
+			<img src="alpro2.png" alt="Avatar" class="right" style="width:100%;">
+			 <h3 style="text-align: right; margin-top: 10px;">Laboratorium Alpro</h3>
 		</div>
 		<div class="container" >
 			<div class="row d-flex justify-content-center">
@@ -107,47 +107,47 @@
 						<div class="single-post post-style-2">
 							<div class="col-lg-4 blog-image" style="margin:40px 10px 10px 50px;">
 								<div class="container darker">
-								  <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
-								  <p>Rachel Zane</p>
-								  <span class="time-left" id="previewpesan">Nah, I dunno. Play soccer.. or ..</span>
+								  <img src="alpro2.png" alt="Avatar" class="right" style="width:100%;">
+								  <p>Laboratorium Alpro</p>
+								  <span class="time-left" id="previewpesan">Enaknya ngapain ya? Ngoding...</span>
 								</div>
 
 								<div class="container">
-								  <img src="http://emilcarlsson.se/assets/mikeross.png" alt="Avatar" class="right" style="width:100%;">
-								  <p>Mike Ross</p>
-								  <span class="time-left">Yesssss</span>
+								  <img src="rpl.png" alt="Avatar" class="right" style="width:100%;">
+								  <p>Laboratorium RPL</p>
+								  <span class="time-left">Kegiatan Belajar tentang...</span>
 								</div>
 
 								<div class="container">
-								  <img src="http://emilcarlsson.se/assets/katrinabennett.png" alt="Avatar" class="right" style="width:100%;">
-								  <p>Katrina Bennett</p>
-								  <span class="time-left">Sure</span>
+								  <img src="kcv.jpg" alt="Avatar" class="right" style="width:100%;">
+								  <p>Laboratorium KCV</p>
+								  <span class="time-left">So Pasti</span>
 								</div>
 							</div>
 							<div class="col-lg-8 blog-info" style="margin:10px 10px 10px 80px;">						
 								<div id="isipesan">
 									<div class="container">
-									  <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="Avatar" style="width:100%;">
+									  <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
 									  <p>Hello. How are you today?</p>
-									  <span class="time-right">11:00</span>
+									  <span class="time-left">11:00</span>
 									</div>
 
 									<div class="container darker">
-									  <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
+									  <img src="alpro2.png" alt="Avatar" style="width:100%;">
 									  <p>Hey! I'm fine. Thanks for asking!</p>
-									  <span class="time-left">11:01</span>
+									  <span class="time-right">11:01</span>
 									</div>
 
 									<div class="container">
-									  <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="Avatar" style="width:100%;">
+									  <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
 									  <p>Sweet! So, what do you wanna do today?</p>
-									  <span class="time-right">11:02</span>
+									  <span class="time-left">11:02</span>
 									</div>
 
 									<div class="container darker">
-									  <img src="http://emilcarlsson.se/assets/rachelzane.png" class="right" alt="Avatar" style="width:100%;">
+									  <img src="alpro2.png" alt="Avatar" style="width:100%;">
 									  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-									  <span class="time-left">11:05</span>
+									  <span class="time-right">11:05</span>
 									</div>
 								</div>	
 								<div class="container">
@@ -206,7 +206,7 @@
 			if ($.trim(message) == '') {
 				return false;
 			}
-			$('<div class="container"><img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="Avatar" style="width:100%;"><p>' + message + '</p><span class="time-right">' + currentdate.getHours() + ":" + currentdate.getMinutes() + '</span></div>').appendTo($('#isipesan'));
+			$('<div class="container"><img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;"><p>' + message + '</p><span class="time-left">' + currentdate.getHours() + ":" + currentdate.getMinutes() + '</span></div>').appendTo($('#isipesan'));
 			$('#inputpesan').val(null);
 			$('#previewpesan').html('<span>You: </span>' + message);
 			$("#isipesan").animate({ scrollTop: $(document).height() }, "fast");

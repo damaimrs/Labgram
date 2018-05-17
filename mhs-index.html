@@ -79,7 +79,7 @@
 				<div class="col-lg-9 col-md-9 col-sm-10">
 					<div class="card h-100">
 						<div class="single-post post-style-2">
-							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-image"><img src="foto/computer-lab.jpg" alt="Blog Image"></div>
 							<div class="blog-info">
                 <div class="avatar-area">
 									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
@@ -88,7 +88,7 @@
 										<h6 class="date">on May 13, 2018 at 7:30pm</h6>
 									</div>
 								</div>
-								<p>Telah berlangsung acara Data Mining Club di Lbaoratorium KCV</p>
+								<p>Telah berlangsung acara Data Mining Club di Laboratorium KCV</p>
 
                 <div id="comment1" style="display:none">
                   <form>
@@ -101,9 +101,9 @@
 
                 </div>
 								<ul class="post-footer">
-									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a onclick="changeColor1()" id="count-1"><i class="ion-heart" id="like-1"></i>57</a></li>
 									<li><a href="detail-foto.html"><i class="ion-chatbubble"></i>2</a></li>
-				                     <li><a><i class="ion-android-add" onclick="showComments1()"></i></a></li>
+				                     <!-- <li><a><i class="ion-android-add" onclick="showComments1()"></i></a></li> -->
 													<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
 								</ul>
 
@@ -116,7 +116,7 @@
         <div class="col-lg-9 col-md-9 col-sm-10">
 					<div class="card h-100">
 						<div class="single-post post-style-2">
-							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-image"><img src="foto/labkom4.jpg" alt="Blog Image"></div>
 							<div class="blog-info">
                 <div class="avatar-area">
 									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
@@ -138,9 +138,9 @@
 
                 </div>
 								<ul class="post-footer">
-									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a onclick="changeColor2()" id="count-2"><i class="ion-heart" id="like-2"></i>57</a></li>
 									<li><a href="detail-foto.html"><i class="ion-chatbubble"></i>2</a></li>
-                  <li><a><i class="ion-android-add" onclick="showComments2()"></i></a></li>
+                  <!-- <li><a><i class="ion-android-add" onclick="showComments2()"></i></a></li> -->
 									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
 								</ul>
 
@@ -153,7 +153,7 @@
         <div class="col-lg-9 col-md-9 col-sm-10">
 					<div class="card h-100">
 						<div class="single-post post-style-2">
-							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-image"><img src="foto/labkom3.jpg" alt="Blog Image"></div>
 							<div class="blog-info">
                 <div class="avatar-area">
 									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
@@ -175,9 +175,9 @@
 
                 </div>
 								<ul class="post-footer">
-									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a onclick="changeColor3()" id="count-3"><i class="ion-heart" id="like-3"></i>57</a></li>
 									<li><a href="detail-foto.html"><i class="ion-chatbubble"></i>2</a></li>
-                  <li><a><i class="ion-android-add" onclick="showComments3()"></i></a></li>
+                  <!-- <li><a><i class="ion-android-add" onclick="showComments3()"></i></a></li> -->
 									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
 								</ul>
 
@@ -254,6 +254,60 @@
       else{
         document.getElementById('comment3').style.display = "block";
       }
+    }
+
+    function changeColor1() {
+    	if (document.getElementById('like-1').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+    		document.getElementById('like-1').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+    		document.getElementById('like-1').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
+    }
+
+    function changeColor2() {
+    	if (document.getElementById('like-2').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-2').innerHTML = '<i class="ion-heart" id="like-2"></i>' + count.toString();
+    		document.getElementById('like-2').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-2').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-2').innerHTML = '<i class="ion-heart" id="like-2"></i>' + count.toString();
+    		document.getElementById('like-2').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
+    }
+
+    function changeColor3() {
+    	if (document.getElementById('like-3').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-3').innerHTML = '<i class="ion-heart" id="like-3"></i>' + count.toString();
+    		document.getElementById('like-3').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-3').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-3').innerHTML = '<i class="ion-heart" id="like-3"></i>' + count.toString();
+    		document.getElementById('like-3').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
     }
   </script>
 
