@@ -33,10 +33,10 @@
 			</ul><!-- main-menu -->
 
 			<div class="src-area">
-				<form>
+				<!-- <form>
 					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
 					<input class="src-input" type="text" placeholder="Type of search">
-				</form>
+				</form> -->
 			</div>
       <style>
         .logout{
@@ -95,12 +95,11 @@
                 <div class="avatar-area">
 									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
 									<div class="right-area">
-										<a class="name" href="#"><b>Lora Plamer</b></a>
+										<a class="name" href="mhs-profil.html"><b>Laboratorium KCV</b></a>
 										<h6 class="date" href="#">on Sep 29, 2017 at 9:48am</h6>
 									</div>
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+								<p>Telah berlangsung acara Data Mining Club di Laboratorium KCV</p>
 
                 <div id="comment1" style="display:none">
                   <form>
@@ -115,7 +114,7 @@
 
                 </div>
 								<ul class="post-footer">
-									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a onclick="changeColor()" id="count-1"><i class="ion-heart" id="like-1"></i>57</a></li>
 									<li><a><i class="ion-chatbubble"></i>2</a></li>
 									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
 								</ul>
@@ -137,10 +136,27 @@
 							<div class="blog-info">
                 <h6 class="pre-title"><a><b>Komentar</b></a></h6>
                 <br>
-								<p><strong>rozana_f</strong> Bagus banget acaranya min, lain kali adain lagi dong buat bahasa pemrograman yang lain!</p>
-                <p><strong>damaimrs</strong> semoga lab lain juga punya acara kaya gini</p>
+                <div class="comment">
+                  <p><strong>rozana_f</strong> Bagus banget acaranya min, lain kali adain lagi dong buat bahasa pemrograman yang lain!</p>
 
-                <div>
+                  <p><strong>damaimrs</strong> semoga lab lain juga punya acara kaya gini</p>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-10">
+                      <form>
+                          <div class="form-group">
+                            <label for="comment"></label>
+                            <br>
+                            <input type="text" class="form-control" id="input-1" placeholder="tulis komentar.." onkeyup="getNewComment()">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="col-lg-2" style="margin-top: 22px;">
+                      <button type="button" class="btn btn-outline-info" id="follow-status" style="float:right;" onclick="postNewComment()">Komentar</button>
+                  </div>
+                </div>
+                <!-- <div>
                   <form>
                     <div class="form-group">
                       <label for="comment3"></label>
@@ -149,7 +165,7 @@
                     </div>
                   </form>
 
-                </div>
+                </div> -->
 							</div><!-- blog-right -->
 
 						</div><!-- single-post extra-blog -->
@@ -201,6 +217,7 @@
 
 	<!-- SCIPTS -->
   <script type="text/javascript">
+    var newComment;
 
     function showComments1() {
       if(document.getElementById('comment1').style.display == "block"){
@@ -225,6 +242,40 @@
       else{
         document.getElementById('comment3').style.display = "block";
       }
+    }
+    function changeColor() {
+      if (document.getElementById('like-1').style.color != 'red'){
+        var count;                    
+        count = Number(document.getElementById('count-1').innerText);
+        count = count + 1;        
+        document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+        document.getElementById('like-1').style.color = 'red'; 
+      }
+      else {
+        var count;                    
+        count = Number(document.getElementById('count-1').innerText);
+        count = count + -1;       
+        document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+        document.getElementById('like-1').style.color = '"#f141"'; 
+      }
+      // document.getElementById('like-1').style.color = 'red';
+    }
+    function getNewComment() {     
+      newCaption = document.getElementById('input-1').value;
+      console.log(newCaption);     
+    }
+
+    function postNewComment() {
+      var commentList;
+      commentList = document.getElementsByClassName('comment')[0].innerHTML;
+      console.log(commentList);
+      commentList = commentList.concat('<p id="comment" style="display:block"><button type="button" class="close" aria-label="Close" style="float:right;" onclick="deleteComment()"><span>&times;</span></button><strong>Laboratorium KCV </strong>').concat(newCaption).concat('</p>');
+      document.getElementsByClassName('comment')[0].innerHTML = commentList;
+      newCaption = '';
+      document.getElementById('input-1').value = '';
+    }
+    function deleteComment() {
+      document.getElementById('comment').style.display = 'none';
     }
   </script>
 
