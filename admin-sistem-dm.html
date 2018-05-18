@@ -99,8 +99,8 @@
 
 	<section class="blog-area section">
 		<div class="container darker">
-			<img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
-			 <h2 style="text-align: right; margin-top: 10px;">Damai Marisa B</h2>
+			<img src="alpro2.png" alt="Avatar" class="right" style="width:100%;">
+			 <h3 style="text-align: right; margin-top: 10px;">Laboratorium Alpro</h3>
 		</div>
 		<div class="container" >
 			<div class="row d-flex justify-content-center">
@@ -109,50 +109,53 @@
 						<div class="single-post post-style-2">
 							<div class="col-lg-4 blog-image" style="margin:40px 10px 10px 50px;">
 								<div class="container darker">
-								  <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
-								  <p>Rachel Zane</p>
-								  <span class="time-left">Nah, I dunno. Play soccer.. or ..</span>
+								  <img src="alpro2.png" alt="Avatar" class="right" style="width:100%;">
+								  <p>Laboratorium Alpro</p>
+								  <span class="time-left" id="previewpesan">Sama-samaa</span>
 								</div>
 
 								<div class="container">
-								  <img src="http://emilcarlsson.se/assets/mikeross.png" alt="Avatar" class="right" style="width:100%;">
-								  <p>Mike Ross</p>
-								  <span class="time-left">Yesssss</span>
+								  <img src="rpl.png" alt="Avatar" class="right" style="width:100%;">
+								  <p>Laboratorium RPL</p>
+								  <span class="time-left">Kegiatan Belajar tentang...</span>
 								</div>
 
 								<div class="container">
-								  <img src="http://emilcarlsson.se/assets/katrinabennett.png" alt="Avatar" class="right" style="width:100%;">
-								  <p>Katrina Bennett</p>
-								  <span class="time-left">Sure</span>
+								  <img src="kcv.jpg" alt="Avatar" class="right" style="width:100%;">
+								  <p>Laboratorium KCV</p>
+								  <span class="time-left">So Pasti</span>
 								</div>
 							</div>
 							<div class="col-lg-8 blog-info" style="margin:10px 10px 10px 80px;">						
+								<div id="isipesan">
+									<div class="container">
+									  <img src="images/icons8-team-355979.jpg" alt="Avatar" class="right" style="width:100%;">
+									  <p>Min, kunci nanti jadwal nya di alpro ya?</p>
+									  <span class="time-left">11:00</span>
+									</div>
+
+									<div class="container darker">
+									  <img src="alpro2.png" alt="Avatar" style="width:100%;">
+									  <p>Iyaa</p>
+									  <span class="time-right">11:01</span>
+									</div>
+
+									<div class="container">
+									  <img src="images/icons8-team-355979.jpg" alt="Avatar" class="right" style="width:100%;">
+									  <p>Okdeh, makasih min</p>
+									  <span class="time-left">11:02</span>
+									</div>
+
+									<div class="container darker">
+									  <img src="alpro2.png" alt="Avatar" style="width:100%;">
+									  <p>Sama-samaa</p>
+									  <span class="time-right">11:05</span>
+									</div>
+								</div>	
 								<div class="container">
-								  <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="Avatar" style="width:100%;">
-								  <p>Hello. How are you today?</p>
-								  <span class="time-right">11:00</span>
-								</div>
-
-								<div class="container darker">
-								  <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Avatar" class="right" style="width:100%;">
-								  <p>Hey! I'm fine. Thanks for asking!</p>
-								  <span class="time-left">11:01</span>
-								</div>
-
-								<div class="container">
-								  <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="Avatar" style="width:100%;">
-								  <p>Sweet! So, what do you wanna do today?</p>
-								  <span class="time-right">11:02</span>
-								</div>
-
-								<div class="container darker">
-								  <img src="http://emilcarlsson.se/assets/rachelzane.png" class="right" alt="Avatar" style="width:100%;">
-								  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-								  <span class="time-left">11:05</span>
-								</div>
-
-								<div class="container">
-								  <input type="text" class="form-control" id="" placeholder="tulis pesan..">
+									<span class="col-md-9">
+									  <input type="text" class="form-control" id="inputpesan" placeholder="tulis pesan.."></span><span class="col-md-2"><button class="btn btn-success" id="submit">Submit</button>
+									</span>
 								</div>
 							</div>
 						</div>
@@ -192,62 +195,29 @@
 
 	<!-- SCIPTS -->
 	<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script >$(".messages").animate({ scrollTop: $(document).height() }, "fast");
-
-	$("#profile-img").click(function() {
-		$("#status-options").toggleClass("active");
-	});
-
-	$(".expand-button").click(function() {
-	  $("#profile").toggleClass("expanded");
-		$("#contacts").toggleClass("expanded");
-	});
-
-	$("#status-options ul li").click(function() {
-		$("#profile-img").removeClass();
-		$("#status-online").removeClass("active");
-		$("#status-away").removeClass("active");
-		$("#status-busy").removeClass("active");
-		$("#status-offline").removeClass("active");
-		$(this).addClass("active");
-
-		if($("#status-online").hasClass("active")) {
-			$("#profile-img").addClass("online");
-		} else if ($("#status-away").hasClass("active")) {
-			$("#profile-img").addClass("away");
-		} else if ($("#status-busy").hasClass("active")) {
-			$("#profile-img").addClass("busy");
-		} else if ($("#status-offline").hasClass("active")) {
-			$("#profile-img").addClass("offline");
-		} else {
-			$("#profile-img").removeClass();
+	<script type="text/javascript">
+		function newMessage(){
+			message = $("#inputpesan").val();
+			currentdate = new Date();
+			if ($.trim(message) == '') {
+				return false;
+			}
+			$('<div class="container"><img src="images/icons8-team-355979.jpg" alt="Avatar" class="right" style="width:100%;"><p>' + message + '</p><span class="time-left">' + currentdate.getHours() + ":" + currentdate.getMinutes() + '</span></div>').appendTo($('#isipesan'));
+			$('#inputpesan').val(null);
+			$('#previewpesan').html('<span>You: </span>' + message);
+			$("#isipesan").animate({ scrollTop: $(document).height() }, "fast");
 		};
 
-		$("#status-options").removeClass("active");
-	});
+		$('#submit').click(function() {
+			newMessage();
+		});
 
-	function newMessage() {
-		message = $(".message-input input").val();
-		if($.trim(message) == '') {
-			return false;
-		}
-		$('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
-		$('.message-input input').val(null);
-		$('.contact.active .preview').html('<span>You: </span>' + message);
-		$(".messages").animate({ scrollTop: $(document).height() }, "fast");
-	};
-
-	$('.submit').click(function() {
-	  newMessage();
-	});
-
-	$(window).on('keydown', function(e) {
-	  if (e.which == 13) {
-	    newMessage();
-	    return false;
-	  }
-	});
-	//# sourceURL=pen.js
+		$(window).on('keydown', function(e) {
+			if (e.which == 13) {
+				newMessage();
+				return false;
+			}
+		});
 	</script>
 
 	<script src="common-js/jquery-3.1.1.min.js"></script>
