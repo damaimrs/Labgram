@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>TITLE</title>
+	<title>Labgram</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -36,8 +36,8 @@
 
 			<div class="src-area">
 				<form>
-					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
-					<input class="src-input" type="text" placeholder="Type of search">
+					<!-- <button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+					<input class="src-input" type="text" placeholder="Type of search">-->
 				</form>
 			</div>
 			<style>
@@ -92,32 +92,30 @@
 				<div class="col-lg-9 col-md-9 col-sm-10">
 					<div class="card h-100">
 						<div class="single-post post-style-2">
-							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-image"><img src="foto/computer-lab.jpg" alt="Blog Image"></div>
 							<div class="blog-info">
-                <div class="avatar-area">
-									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+                					<div class="avatar-area">
+									<a class="avatar" href="admin-sistem-profil.html"><img src="kcv.jpg" alt="Profile Image"></a>
 									<div class="right-area">
-										<a class="name" href="admin-sistem-admin-lab-profil.html"><b>Laboratorium KCV</b></a>
+										<a class="name" href="admin-sistem-profil.html"><b>Laboratorium KCV</b></a>
 										<h6 class="date">on Sep 29, 2017 at 9:48am</h6>
 									</div>
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+								<p>Telah berlangsung acara Data Mining Club di Laboratorium KCV</p>
+				                <div id="comment1" style="display:none">
+				                  <form>
+				                    <div class="form-group">
+				                      <label for="comment1"></label>
+				                      <br>
+				                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
+				                    </div>
+				                  </form>
 
-                <div id="comment1" style="display:none">
-                  <form>
-                    <div class="form-group">
-                      <label for="comment1"></label>
-                      <br>
-                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
-                    </div>
-                  </form>
-
-                </div>
+				                </div>
 								<ul class="post-footer">
-									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a onclick="changeColor1()" id="count-1"><i class="ion-heart" id="like-1"></i>57</a></li>
 									<li><a href="admin-sistem-detil-foto.html"><i class="ion-chatbubble"></i>2</a></li>
-                  <li><a><i class="ion-android-add" onclick="showComments1()"></i></a></li>
+                  					<!-- <li><a><i class="ion-android-add" onclick="showComments1()"></i></a></li> -->
 									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
 								</ul>
 
@@ -127,35 +125,32 @@
 
 					</div><!-- card -->
 				</div><!-- col-lg-8 col-md-12 -->
-        <div class="col-lg-9 col-md-9 col-sm-10">
+        		<div class="col-lg-9 col-md-9 col-sm-10">
 					<div class="card h-100">
 						<div class="single-post post-style-2">
-							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-image"><img src="foto/labkom4.jpg" alt="Blog Image"></div>
 							<div class="blog-info">
-                <div class="avatar-area">
-									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+                					<div class="avatar-area">
+									<a class="avatar" href="admin-sistem-profil.html"><img src="kcv.jpg" alt="Profile Image"></a>
 									<div class="right-area">
-										<a class="name" href="admin-sistem-admin-lab-profil.html"><b>Laboratorium KCV</b></a>
-										<h6 class="date" href="#">on Sep 29, 2017 at 9:48am</h6>
+										<a class="name" href="admin-sistem-profil.html"><b>Laboratorium KCV</b></a>
+										<h6 class="date">on Sep 29, 2017 at 9:48am</h6>
 									</div>
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-                <div id="comment2" style="display:none">
-                  <form>
-                    <div class="form-group">
-                      <label for="comment2"></label>
-                      <br>
-                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
-                    </div>
-                  </form>
-
-                </div>
+								<p>Telah Berlangsung acara LBE(Lab Basic Education) di Laboratorium KCV</p>
+				                <div id="comment2" style="display:none">
+				                  <form>
+				                    <div class="form-group">
+				                      <label for="comment2"></label>
+				                      <br>
+				                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
+				                    </div>
+				                  </form>
+				                </div>
 								<ul class="post-footer">
-									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a onclick="changeColor2()" id="count-2"><i class="ion-heart" id="like-2"></i>57</a></li>
 									<li><a href="admin-sistem-detil-foto.html"><i class="ion-chatbubble"></i>2</a></li>
-                  <li><a><i class="ion-android-add" onclick="showComments2()"></i></a></li>
+                  					<!-- <li><a><i class="ion-android-add" onclick="showComments2()"></i></a></li> -->
 									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
 								</ul>
 
@@ -165,35 +160,32 @@
 
 					</div><!-- card -->
 				</div><!-- col-lg-8 col-md-12 -->
-        <div class="col-lg-9 col-md-9 col-sm-10">
+        		<div class="col-lg-9 col-md-9 col-sm-10">
 					<div class="card h-100">
 						<div class="single-post post-style-2">
-							<div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+							<div class="blog-image"><img src="foto/labkom3.jpg" alt="Blog Image"></div>
 							<div class="blog-info">
-                <div class="avatar-area">
-									<a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+                					<div class="avatar-area">
+									<a class="avatar" href="admin-sistem-profil.html"><img src="kcv.jpg" alt="Profile Image"></a>
 									<div class="right-area">
-										<a class="name" href="admin-sistem-admin-lab-profil.html"><b>Laboratorium KCV</b></a>
-										<h6 class="date" href="#">on Sep 29, 2017 at 9:48am</h6>
+										<a class="name" href="admin-sistem-profil.html"><b>Laboratorium KCV</b></a>
+										<h6 class="date">on Sep 29, 2017 at 9:48am</h6>
 									</div>
 								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-                <div id="comment3" style="display:none">
-                  <form>
-                    <div class="form-group">
-                      <label for="comment3"></label>
-                      <br>
-                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
-                    </div>
-                  </form>
-
-                </div>
+								<p>Telah Berlangsung sidang Tugas Akhir di Laboratorium KCV oleh salah satu mahasiswa Tugas Akhir RMK KCV. Semoga acara berjalan dengan lancar.</p>
+				                <div id="comment3" style="display:none">
+				                  <form>
+				                    <div class="form-group">
+				                      <label for="comment3"></label>
+				                      <br>
+				                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
+				                    </div>
+				                  </form>
+				                </div>
 								<ul class="post-footer">
-									<li><a><i class="ion-heart"></i>57</a></li>
+									<li><a onclick="changeColor3()" id="count-3"><i class="ion-heart" id="like-3"></i>57</a></li>
 									<li><a href="admin-sistem-detil-foto.html"><i class="ion-chatbubble"></i>2</a></li>
-                  <li><a><i class="ion-android-add" onclick="showComments3()"></i></a></li>
+                  					<!-- <li><a><i class="ion-android-add" onclick="showComments3()"></i></a></li> -->
 									<!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
 								</ul>
 
@@ -270,6 +262,60 @@
       else{
         document.getElementById('comment3').style.display = "block";
       }
+    }
+
+    function changeColor1() {
+    	if (document.getElementById('like-1').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+    		document.getElementById('like-1').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+    		document.getElementById('like-1').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
+    }
+
+    function changeColor2() {
+    	if (document.getElementById('like-2').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-2').innerHTML = '<i class="ion-heart" id="like-2"></i>' + count.toString();
+    		document.getElementById('like-2').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-2').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-2').innerHTML = '<i class="ion-heart" id="like-2"></i>' + count.toString();
+    		document.getElementById('like-2').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
+    }
+
+    function changeColor3() {
+    	if (document.getElementById('like-3').style.color != 'red'){
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-1').innerText);
+    		count = count + 1;    		
+    		document.getElementById('count-3').innerHTML = '<i class="ion-heart" id="like-3"></i>' + count.toString();
+    		document.getElementById('like-3').style.color = 'red'; 
+    	}
+    	else {
+    		var count;    		   		   		
+    		count = Number(document.getElementById('count-3').innerText);
+    		count = count + -1;    		
+    		document.getElementById('count-3').innerHTML = '<i class="ion-heart" id="like-3"></i>' + count.toString();
+    		document.getElementById('like-3').style.color = '"#f141"'; 
+    	}
+    	// document.getElementById('like-1').style.color = 'red';
     }
   </script>
 

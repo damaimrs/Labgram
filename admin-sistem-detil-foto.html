@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>TITLE</title>
+  <title>Labgram</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
@@ -83,6 +83,44 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="delete-comment-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Konfirmasi Hapus</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Anda ingin menghapus komentar ini?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Tidak</button>
+            <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="deleteComment1()">Ya</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="modal fade" id="delete-comment-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Konfirmasi Hapus</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Anda ingin menghapus komentar ini?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Tidak</button>
+            <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" onclick="deleteComment2()">Ya</button>
+          </div>
+        </div>
+      </div>
+  </div>
   <section class="blog-area section">
 
     <div class="container">
@@ -91,33 +129,31 @@
         <div class="col-lg-9 col-md-9 col-sm-10">
           <div class="card h-100">
             <div class="single-post post-style-2">
-              <div class="blog-image"><img src="images/brooke-lark-194251.jpg" alt="Blog Image"></div>
+              <div class="blog-image"><img src="foto/computer-lab.jpg" alt="Blog Image"></div>
               <div class="blog-info">
                 <div class="avatar-area">
-                  <a class="avatar" href="#"><img src="images/icons8-team-355979.jpg" alt="Profile Image"></a>
+                  <a class="avatar" href="admin-lab-profil.html"><img src="kcv.jpg" alt="Profile Image"></a>
                   <div class="right-area">
-                    <a class="name" href="#"><b>Lora Plamer</b></a>
-                    <h6 class="date" href="#">on Sep 29, 2017 at 9:48am</h6>
+                    <a class="name" href="admin-lab-profil.html"><b>Laboratorium KCV</b></a>
+                    <h6 class="date">on Sep 29, 2017 at 9:48am</h6>
                   </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p>Telah berlangsung acara Data Mining Club di Laboratorium KCV</p>
 
                 <div id="comment1" style="display:none">
                   <form>
                     <div class="form-group">
-                      <label for="comment1"></label>
+                      <label for="comment1"></label>                      
                       <p> <strong>rozana_f</strong> WELEKKKK</p>
-                      <p> <strong>damaimrs</strong> Ntap</p>
+                      <p> <a href="mhs-profil.html"></a><strong>damaimrs</strong> Ntap</p>
                       <br>
                       <input type="text" class="form-control" id="" placeholder="tulis komentar..">
                     </div>
-                  </form>
-
+                  </form>                  
                 </div>
                 <ul class="post-footer">
-                  <li><a><i class="ion-heart"></i>57</a></li>
-                  <li><a><i class="ion-chatbubble"></i>2</a></li>
+                  <li><a onclick="changeColor1()" id="count-1"><i class="ion-heart" id="like-1"></i>57</a></li>
+                  <li><a id="count-2"><i class="ion-chatbubble" id="comment-count"></i>2</a></li>
                   <!-- <li><a href="#"><i class="ion-eye"></i>138</a></li> -->
                 </ul>
 
@@ -138,18 +174,36 @@
               <div class="blog-info">
                 <h6 class="pre-title"><a><b>Komentar</b></a></h6>
                 <br>
-                <p><strong>rozana_f</strong> Bagus banget acaranya min, lain kali adain lagi dong buat bahasa pemrograman yang lain!</p>
-                <p><strong>damaimrs</strong> semoga lab lain juga punya acara kaya gini</p>
+                <div class="comment">
 
-                <div>
-                  <form>
-                    <div class="form-group">
-                      <label for="comment3"></label>
-                      <br>
-                      <input type="text" class="form-control" id="" placeholder="tulis komentar..">
-                    </div>
-                  </form>
+                                       
+                    <p id="comment-1" style="display:block;">
+                      <button type="button" class="close" aria-label="Close" style="float:right;" data-toggle="modal" data-target="#delete-comment-1">
+                        <span>&times;</span>
+                      </button> 
+                      <a href="admin-lab-mhs-rozana.html"  style="font-weight:600;">rozana_f</a> Bagus banget acaranya min, lain kali adain lagi dong buat bahasa pemrograman yang lain!</p>
 
+                    
+                    <p id="comment-2" style="display:block;">
+                      <button type="button" class="close" aria-label="Close" style="float:right;" data-toggle="modal" data-target="#delete-comment-2">
+                        <span>&times;</span>
+                      </button>
+                      <a href="admin-lab-mhs-damai.html" style="font-weight:600;">damaimrs</a> semoga lab lain juga punya acara kaya gini</p>
+
+                </div>                
+                <div class="row">
+                  <div class="col-lg-10">
+                      <form>
+                          <div class="form-group">
+                            <label for="comment"></label>
+                            <br>
+                            <input type="text" class="form-control" id="input-1" placeholder="tulis komentar.." onkeyup="getNewComment()">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="col-lg-2" style="margin-top: 22px;">
+                      <button type="button" class="btn btn-outline-info" id="follow-status" style="float:right;" onclick="postNewComment()">Komentar</button>
+                  </div>
                 </div>
               </div><!-- blog-right -->
 
@@ -202,6 +256,7 @@
 
   <!-- SCIPTS -->
   <script type="text/javascript">
+    var newComment;
 
     function showComments1() {
       if(document.getElementById('comment1').style.display == "block"){
@@ -211,6 +266,7 @@
         document.getElementById('comment1').style.display = "block";
       }
     }
+
     function showComments2() {
       if(document.getElementById('comment2').style.display == "block"){
         document.getElementById('comment2').style.display = "none";
@@ -219,6 +275,7 @@
         document.getElementById('comment2').style.display = "block";
       }
     }
+
     function showComments3() {
       if(document.getElementById('comment3').style.display == "block"){
         document.getElementById('comment3').style.display = "none";
@@ -226,6 +283,60 @@
       else{
         document.getElementById('comment3').style.display = "block";
       }
+    }
+
+    function changeColor1() {
+      if (document.getElementById('like-1').style.color != 'red'){
+        var count;                    
+        count = Number(document.getElementById('count-1').innerText);
+        count = count + 1;        
+        document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+        document.getElementById('like-1').style.color = 'red'; 
+      }
+      else {
+        var count;                    
+        count = Number(document.getElementById('count-1').innerText);
+        count = count + -1;       
+        document.getElementById('count-1').innerHTML = '<i class="ion-heart" id="like-1"></i>' + count.toString();
+        document.getElementById('like-1').style.color = '"#f141"'; 
+      }
+      // document.getElementById('like-1').style.color = 'red';
+    }
+
+    function getNewComment() {     
+      newCaption = document.getElementById('input-1').value;
+      console.log(newCaption);     
+    }
+
+    function postNewComment() {
+      var commentList, count;
+      commentList = document.getElementsByClassName('comment')[0].innerHTML;
+      console.log(commentList);
+      commentList = commentList.concat('<p id="commentt"><button type="button" class="close" aria-label="Close" style="float:right;"><span>&times;</span></button><a href="admin-sistem-profil.html" style="font-weight:600;">Dagri HMTC ITS </a>').concat(' ').concat(newCaption).concat('</p>');
+      document.getElementsByClassName('comment')[0].innerHTML = commentList;
+      newCaption = '';
+      document.getElementById('input-1').value = '';
+
+      count = Number(document.getElementById('count-2').innerText);
+      console.log(count);
+      count = count + 1;        
+      document.getElementById('count-2').innerHTML = '<i class="ion-chatbubble" id="comment-count"></i>' + count.toString();
+    }
+
+    function deleteComment1() {
+      document.getElementById('comment-1').style.display = 'none';
+      count = Number(document.getElementById('count-2').innerText);
+      console.log(count);
+      count = count - 1;        
+      document.getElementById('count-2').innerHTML = '<i class="ion-chatbubble" id="comment-count"></i>' + count.toString();
+    }
+
+    function deleteComment2() {
+      document.getElementById('comment-2').style.display = 'none';
+      count = Number(document.getElementById('count-2').innerText);
+      console.log(count);
+      count = count - 1;        
+      document.getElementById('count-2').innerHTML = '<i class="ion-chatbubble" id="comment-count"></i>' + count.toString();
     }
   </script>
 
