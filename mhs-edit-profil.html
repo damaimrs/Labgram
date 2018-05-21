@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>TITLE</title>
+	<title>Edit Profil</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -33,10 +33,10 @@
 			</ul><!-- main-menu -->
 
 			<div class="src-area">
-				<form>
+				<!-- <form>
 					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
 					<input class="src-input" type="text" placeholder="Type of search">
-				</form>
+				</form> -->
 			</div>
 			<style>
 				.logout{
@@ -97,13 +97,18 @@
 									<h3 text-alig = "center" text-transform = "uppercase" >Edit Profile</h3>
 								</div>
 								<div class="avatar-area">
-									<a class="avatar" href="#" style="width: 100px; height: 100px;" ><img src="images/icons8-team-355979.jpg" alt="Profile Image" ></a>
-									<div class="right-area" style="margin-left: 120px;">
+									<a class="avatar" style="width: 100px; height: 100px;" ><img src="http://emilcarlsson.se/assets/rachelzane.png" alt="Profile Image" ></a>
+									<div class="form-group">
+								              <label for="exampleInputFile">Upload Foto</label>
+								                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+								                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan diupload</small>
+								            </div>
+									<div class="right-area" style="margin-left: 300px;">
 										<br><br>
-										<form action="mhs-profil.html" method="post">
+										<form action="admin-lab-profil.html" method="post">											
 										  <div class="form-group">
 										    <!-- <label for="exampleInputEmail1">Email address</label> -->
-										    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" value="Damai Marisa B">
+										    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" value="Damai Marisa Bachri">
 										  </div>
 										  <div class="form-group">
 										    <!-- <label for="exampleInputPassword1">Password</label> -->
@@ -113,34 +118,13 @@
 										    <!-- <label for="exampleInputPassword1">Password</label> -->
 										    <input type="text" class="form-control" id="exampleInputStatus1" placeholder="Status" value="Halo !">
 										  </div>
-										  <a href="mhs-profil.html" style="margin-left:32%; margin-bottom:4px;">
+										  <a href="admin-lab-profil.html" style="margin-left:32%; margin-bottom:4px;">
 										  	<button type="button" class="btn btn-info btn-sm" id="follow-status" >Save Profile</button>
 										  </a>										  
 										</form>
                     					
 									</div>
 								</div>
-								<!-- <div class="avatar-area">
-									<div class="right-area" style="margin-left: 120px;">
-										<br><br>
-										<form action="mhs-profil.html" method="post" style="margin-left: 50px;">
-										  <div class="form-group"> -->
-										    <!-- <label for="exampleInputEmail1">Email address</label> -->
-										    <!-- <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" value="Damai Marisa B">
-										  </div>
-										  <div class="form-group"> -->
-										    <!-- <label for="exampleInputPassword1">Password</label> -->
-										    <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value="damaimrs">
-										  </div>
-										  <div class="form-group"> -->
-										    <!-- <label for="exampleInputPassword1">Password</label> -->
-										    <!-- <input type="text" class="form-control" id="exampleInputStatus1" placeholder="Status" value="Halo !">
-										  </div>
-										  <button type="submit" class="btn btn-info btn-sm" id="follow-status" style="margin-left:32%; margin-bottom:4px;">Save Profile</button>
-										</form>
-                    					
-									</div>
-								</div>  -->
 
 
 							</div><!-- blog-right -->
