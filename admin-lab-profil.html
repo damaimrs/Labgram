@@ -12,6 +12,7 @@
 	<link href="common-css/ionicons.css" rel="stylesheet">
 	<link href="layout-1/css/styles.css" rel="stylesheet">
 	<link href="layout-1/css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body >
 	<header>
@@ -25,10 +26,20 @@
 				<li><a href="admin-lab-profil.html">Profile</a></li>
         <li>
           <div class="src-area">
-    				<!-- <form>
+    				<form>
     					<button class="src-btn" type="button" data-toggle="modal" data-target="#add-post"><i class="ion-android-add"></i></button>
-    				</form> -->
+    				</form>
     	  </div>
+        </li>
+        <li>
+        	
+        	<div class="logout">
+        		<a href="index.html">
+				<form align="right" name="form1" method="post" >
+				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#292b2c;"></i>
+				</form>
+				</a>
+			</div>
         </li>
 			</ul><!-- main-menu -->
 
@@ -45,14 +56,39 @@
 				   top:5px;
 				}
 			</style>
-			<div class="logout">
-				<form align="right" name="form1" method="post" action="login/index.html">
-				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#5bc0de;"></i>
-				</form>
-			</div>
-
+			
 		</div><!-- conatiner -->
 	</header>
+	<div class="modal fade" id="add-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="admin-lab-profil.html">
+            <div class="form-group">
+              <label for="exampleInputFile">Upload Foto</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan dipost</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Caption</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-info btn-sm" >Post</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
 	<div class="modal fade" id="edit-post-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	    <div class="modal-dialog" role="document">
 	      <div class="modal-content">

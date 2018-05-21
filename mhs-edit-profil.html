@@ -12,6 +12,7 @@
 	<link href="common-css/ionicons.css" rel="stylesheet">
 	<link href="layout-1/css/styles.css" rel="stylesheet">
 	<link href="layout-1/css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body >
 	<header>
@@ -30,14 +31,23 @@
     				</form> -->
     			</div>
         </li>
+        <li>
+        	<div class="logout">
+        		<a href="index.html">
+				<form align="right" name="form1" method="post" >
+				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#292b2c;"></i>
+				</form>
+				</a>
+			</div>
+        </li>
 			</ul><!-- main-menu -->
 
-			<div class="src-area">
-				<!-- <form>
+			<!-- <div class="src-area">
+				<form>
 					<button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
 					<input class="src-input" type="text" placeholder="Type of search">
-				</form> -->
-			</div>
+				</form>
+			</div> -->
 			<style>
 				.logout{
 				   position:fixed;
@@ -45,12 +55,6 @@
 				   top:5px;
 				}
 			</style>
-			<div class="logout">
-				<form align="right" name="form1" method="post" action="login/index.html">
-				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#5bc0de;"></i>
-				</form>
-			</div>
-
 		</div><!-- conatiner -->
 	</header>
   <div class="modal fade" id="add-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -105,7 +109,7 @@
 								            </div>
 									<div class="right-area" style="margin-left: 300px;">
 										<br><br>
-										<form action="admin-lab-profil.html" method="post">											
+										<form action="mhs-profil.html" method="post">											
 										  <div class="form-group">
 										    <!-- <label for="exampleInputEmail1">Email address</label> -->
 										    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" value="Damai Marisa Bachri">
@@ -118,7 +122,7 @@
 										    <!-- <label for="exampleInputPassword1">Password</label> -->
 										    <input type="text" class="form-control" id="exampleInputStatus1" placeholder="Status" value="Halo !">
 										  </div>
-										  <a href="admin-lab-profil.html" style="margin-left:32%; margin-bottom:4px;">
+										  <a href="mhs-profil.html" style="margin-left:32%; margin-bottom:4px;">
 										  	<button type="button" class="btn btn-info btn-sm" id="follow-status" >Save Profile</button>
 										  </a>										  
 										</form>
