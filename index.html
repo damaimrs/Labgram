@@ -32,6 +32,22 @@
     </head>
 
     <body>
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="height:30px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Register berhasil!</p>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+          </div>
 
         <!-- Top content -->
         <div class="top-content">
@@ -41,12 +57,10 @@
                 	
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Bootstrap</strong> Login &amp; Register Forms</h1>
+                            <h1><strong>Labgram</strong> Login &amp; Register</h1>
                             <div class="description">
                             	<p>
-	                            	This is a free responsive <strong>"login and register forms"</strong> template made with Bootstrap. 
-	                            	Download it on <a href="http://azmind.com" target="_blank"><strong>AZMIND</strong></a>, 
-	                            	customize and use it as you like!
+	                            	Selamat datang di Labgram!<br>Labgram adalah aplikasi untuk menghubungkan mahasiswa dan administrator laboratorium di Teknik Informatika ITS. 
                             	</p>
                             </div>
                         </div>
@@ -58,8 +72,8 @@
                         	<div class="form-box">
 	                        	<div class="form-top">
 	                        		<div class="form-top-left">
-	                        			<h3>Login to our site</h3>
-	                            		<p>Enter username and password to log on:</p>
+	                        			<h3>Login</h3>
+	                            		<p>Masukkan username dan password.</p>
 	                        		</div>
 	                        		<div class="form-top-right">
 	                        			<i class="fa fa-key"></i>
@@ -75,12 +89,12 @@
 				                        	<label class="sr-only" for="form-password">Password</label>
 				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
 				                        </div>
-				                        <button type="submit" class="btn">Sign in!</button>
+				                        <a href="mhs-index.html"><button type="button" class="btn btn-info">Login</button></a>
 				                    </form>
 			                    </div>
 		                    </div>
 		                
-		                	<div class="social-login">
+		                	<!-- <div class="social-login">
 	                        	<h3>...or login with:</h3>
 	                        	<div class="social-login-buttons">
 		                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
@@ -93,7 +107,7 @@
 		                        		<i class="fa fa-google-plus"></i> Google Plus
 		                        	</a>
 	                        	</div>
-	                        </div>
+	                        </div> -->
 	                        
                         </div>
                         
@@ -105,8 +119,8 @@
                         	<div class="form-box">
                         		<div class="form-top">
 	                        		<div class="form-top-left">
-	                        			<h3>Sign up now</h3>
-	                            		<p>Fill in the form below to get instant access:</p>
+	                        			<h3>Register</h3>
+	                            		<p>Isi form dibawah ini untuk mendaftar.</p>
 	                        		</div>
 	                        		<div class="form-top-right">
 	                        			<i class="fa fa-pencil"></i>
@@ -115,11 +129,11 @@
 	                            <div class="form-bottom">
 				                    <form role="form" action="../admin-sistem-index.html" method="post" class="registration-form">
 				                    	<div class="form-group">
-				                    		<label class="sr-only" for="form-first-name">First name</label>
-				                        	<input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+				                    		<label class="sr-only" for="form-first-name">Nama</label>
+				                        	<input type="text" name="form-first-name" placeholder="Nama..." class="form-first-name form-control" id="form-first-name">
 				                        </div>
 				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-last-name">Last name</label>
+				                        	<label class="sr-only" for="form-last-name">Username</label>
 				                        	<input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
 				                        </div>
 				                        <div class="form-group">
@@ -127,11 +141,10 @@
 				                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
 				                        </div>
 				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-about-yourself">About yourself</label>
-				                        	<textarea name="form-about-yourself" placeholder="About yourself..." 
-				                        				class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+				                        	<label class="sr-only" for="form-email">Password</label>
+                                            <input type="password" name="form-email" placeholder="Password..." class="form-email form-control" id="form-email">
 				                        </div>
-				                        <button type="submit" class="btn">Sign me up!</button>
+				                        <button type="button" class="btn" data-toggle="modal" data-target="#register">Register</button>
 				                    </form>
 			                    </div>
                         	</div>
@@ -149,11 +162,11 @@
         	<div class="container">
         		<div class="row">
         			
-        			<div class="col-sm-8 col-sm-offset-2">
+<!--         			<div class="col-sm-8 col-sm-offset-2">
         				<div class="footer-border"></div>
         				<p>Made by Anli Zaimi at <a href="http://azmind.com" target="_blank"><strong>AZMIND</strong></a> 
         					having a lot of fun. <i class="fa fa-smile-o"></i></p>
-        			</div>
+        			</div> -->
         			
         		</div>
         	</div>
