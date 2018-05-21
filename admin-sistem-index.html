@@ -27,19 +27,24 @@
 				<li><a href="admin-sistem-profil.html">Profile</a></li>
 				<li><a href="admin-sistem-delete-account.html">Manage Account</a></li>
         <li>
-          <div class="src-area">
+          <!-- <div class="src-area">
     				<form>
+    					<button class="src-btn" type="button" data-toggle="modal" data-target="#add-post"><i class="ion-android-add"></i></button>
     				</form>
-    			</div>
+    			</div> -->
+        </li>
+        <li>
+        	<div class="logout">
+        		<a href="index.html">
+				<form align="right" name="form1" method="post" >
+				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#292b2c;"></i>
+				</form>
+				</a>
+			</div>
         </li>
 			</ul><!-- main-menu -->
 
-			<div class="src-area">
-				<form>
-					<!-- <button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
-					<input class="src-input" type="text" placeholder="Type of search"> -->
-				</form>
-			</div>
+			
 			<style>
 				.logout{
 				   position:fixed;
@@ -47,12 +52,7 @@
 				   top:5px;
 				}
 			</style>
-			<div class="logout">
-				<form align="right" name="form1" method="post" action="login/index.html">
-				  <i class="fa fa-sign-out" style="margin:10px 30px 10px 10px; font-size:30px;color:#5bc0de;"></i>
-				</form>
-			</div>
-
+			
 		</div><!-- conatiner -->
 	</header>
   <div class="modal fade" id="add-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

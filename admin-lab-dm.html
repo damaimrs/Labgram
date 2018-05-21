@@ -58,6 +58,35 @@
 </head>
 <body >
 	<header>
+		<div class="modal fade" id="add-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Unggah Foto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputFile">Unggah</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Pilih foto yang akan dipost</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Caption</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn" data-dismiss="modal">Batal</button>
+          <button type="button" class="btn btn-info btn" data-dismiss="modal">Unggah</button>
+        </div>
+      </div>
+    </div>
+  </div>
 		<div class="container-fluid position-relative no-side-padding">
 			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
 
@@ -69,7 +98,7 @@
         <li>
           <div class="src-area">
     				<form>
-    					<button class="src-btn" type="submit"><i class="ion-android-add"></i></button>
+    					<button class="src-btn" type="button" data-toggle="modal" data-target="#add-post"><i class="ion-android-add"></i></button>
     				</form>
     			</div>
         </li>
